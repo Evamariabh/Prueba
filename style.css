@@ -1,6 +1,4 @@
 .rounded-image {
-
-  /* Estilo para la imagen redonda */
   .image-container {
     text-align: center;
   }
@@ -8,22 +6,18 @@
 
 .rounded-image {
   border-radius: 50%;
-  /* Esto hace que la imagen sea redonda */
 }
 
 .image-container {
   display: flex;
   justify-content: center;
-  /* Centrar horizontalmente */
   align-items: center;
-  /* Centrar verticalmente */
   max-width: 100%;
   height: auto;
   /* height: 250vh; /* Ajusta la altura según sea necesario */
 }
 
 .container {
-  /* espaciado  115*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +27,6 @@
 
 p {
   font-family: Rockwell;
-  /* Cambia la fuente a Arial o una fuente sans-serif de tu elección */
   font-size: 215%;
   color: rgb(6, 113, 159);
   font-weight: bold;
@@ -42,7 +35,6 @@ p {
 
 .p1 {
   font-family: Segoe UI;
-  /* Cambia la fuente a Arial o una fuente sans-serif de tu elección */
   font-size: 185%;
   color: rgb(6, 113, 159);
   font-weight: bold;
@@ -58,20 +50,15 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300vh;
-
+  
 }
 
 .con {
   background-color: rgb(120, 166, 234);
-  /* Fondo azul */
   color: rgb(255, 252, 252);
-  /* Texto blanco */
   padding: 30px;
   width: 50%;
   margin-top: 20px;
-
-
 }
 
 .image {
@@ -102,11 +89,8 @@ section {
   height: auto;
 }
 
+
 /*proyectos*/
-
-/* Estilos previos omitidos */
-
-
 #proyectos h2 {
   text-align: center;
 }
@@ -114,14 +98,9 @@ section {
 .proyectos-container {
   display: flex;
   justify-content: space-between;
-  /* Espacio horizontal uniforme entre las columnas */
   flex-wrap: wrap;
-  /* Envuelve los proyectos en varias filas si es necesario */
   gap: 20px;
-  /* Espacio entre los proyectos */
   text-align: center;
-
-
 }
 
 .proyecto {
@@ -129,15 +108,12 @@ section {
   padding: 20px;
   border-radius: 5px;
   flex: 0 0 calc(33.33% - 20px);
-  /* Ancho de cada columna (33.33% con espacio entre columnas) */
   box-sizing: border-box;
   transition: background-color 0.2s ease-in-out;
-  /* Transición para el efecto hover */
 }
 
 .proyecto:hover {
   background-color: #d0d0d0;
-  /* Cambio de color de fondo al pasar el cursor */
 }
 
 .proyecto img {
@@ -145,19 +121,12 @@ section {
   height: auto;
 }
 
-.containerp {
-  height: 300vh;
-}
-
-
-
-/*Testimonios*/
+/*T E S T I M O N I O S*/
 
 .testimonial-carousel {
   display: flex;
   overflow: hidden;
   max-width: 400px;
-  /* Ancho del carrusel */
   margin: 0 auto;
 }
 
@@ -181,6 +150,58 @@ p {
 
 h4 {
   margin-top: 10px;
+  text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#prevBtn,
+#nextBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#prevBtn {
+  margin-right: 10px;
+}
+
+
+
+/* Carrusel */
+
+.testimonial-carousel {
+  display: flex;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  flex: 0 0 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+  display: none;
+}
+
+.testimonial img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+p {
+  font-style: italic;
+  align-items: center;
+}
+
+.h2 {
+  margin-top: 10px;
+  text-align: center;
 }
 
 /* Botones para navegar por el carrusel */
@@ -196,3 +217,58 @@ h4 {
 #prevBtn {
   margin-right: 10px;
 }
+
+
+/* Estilos para la sección de contacto */
+.contact-background {
+  background-color: #3bbed2;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5;
+  gap: 20px;
+}
+
+.contact-icons a {
+  padding: 2vh;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #ff4500;
+}
+
+.fab {
+  font-size: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-icons {
+    flex-direction: column;
+  }
+
+  .contact-icons a {
+    margin-top: 10px;
+  }
+}
+
+/* Otras reglas CSS */
+
+#proyectos {
+  margin-bottom: 0; /* Agrega esta línea */
+}
+#testimonios {
+  margin-top: 0; /* Agrega esta línea */
+}
+
+

@@ -111,22 +111,22 @@
 
   <!-- Sección Testimonios -->
   <section id="testimonios" class="section-background"> 
-    <h4>Testimonios</h4>
+    <h3>Testimonios</h4>
     <div class="testimonial-carousel">
       <div class="testimonial">
-        <img src="img/foto.jpeg" alt="Persona 1">
-        <p>d</p>
-        <h4>ddddddddddddddddddddddddd</h4>
+        <img src="img/Cris.jpg" alt="Persona 1" height="170" width="200">
+        <p>Perla Cristal Nava Covarrubias</p>
+        <h4>Eva  es una de las personas más trabajadoras y dedicadas que conozco. Siempre está dispuesta a ayudar y a colaborar con los demás. Es una persona muy positiva y optimista, y siempre tiene una sonrisa en la cara.</h4>
       </div>
       <div class="testimonial">
-        <img src="img/foto.jpeg" alt="Persona 2">
-        <p>uuuuuuuuu</p>
-        <h4>wwwwwwwwwwwwwwwwwwww</h4>
+        <img src="img/yose.jpg" alt="Persona 2" height="50" width="200">
+        <p>Areli Yoselin Bustos Cruz</p>
+        <h4>Colaborar con Eva Maria en proyectos de desarrollo de software ha sido una experiencia verdaderamente enriquecedora. Su destreza técnica es innegable, y su capacidad para resolver problemas complejos siempre me deja impresionada</h4>
       </div>
       <div class="testimonial">
-        <img src="img/foto.jpeg" alt="Persona 3">
-        <p>a</p>
-        <h4>qqqqqqqqqqqqqqqqqqqqqqqqq</h4>
+        <img src="img/karla.jpg" alt="Persona 3" height="170" width="200">
+        <p>Karla Hernández</p>
+        <h4>Eva es una desarrolladora de aplicaciones excepcional y apasionada. Su creatividad y destreza técnica se reflejan en cada una de las aplicaciones que ha desarrollado.</h4>
       </div>
     </div>
     <button id="prevBtn">&#8249;</button>
@@ -135,26 +135,29 @@
   </section>
 
   <!-- Sección Contacto -->
-  <section id="contacto" class="section-background">
-    <div class="container">
-      
+  <section id="contacto" class="contact-background">
+    <h2 class="contacto">Contacto</h2>
+    <div class="contact-icons">
+      <a href="https://github.com/Evamariabh" target="_blank">
+        <img src="img/github.png" alt="" width="40" height="40">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="mailto:bheva6@gmail.com">
+        <img src="img/gmail.png" alt="" width="40" height="40">
+        <i class="far fa-envelope"></i> Gmail
+      </a>
+      <a href="https://www.facebook.com/EvabautistaH" target="_blank">
+        <img src="img/face.png" alt="" width="40" height="40">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+      <a href="https://www.instagram.com/tucuenta" target="_blank">
+        <img src="img/instagram.png" alt="" width="40" height="40">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
     </div>
   </section>
 
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -166,21 +169,18 @@
     $(".testimonial-carousel").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false, // Desactivar la reproducción automática
+      autoplay: false, 
       dots: true,
-      arrows: true, // Mostrar flechas de navegación
+      arrows: true, 
     });
 
-    // Agregar eventos a los botones de navegación personalizados
     $("#prevBtn").click(function () {
-      $(".testimonial-carousel").slick("slickPrev"); // Retroceder al testimonio anterior
+      $(".testimonial-carousel").slick("slickPrev"); 
     });
 
     $("#nextBtn").click(function () {
-      $(".testimonial-carousel").slick("slickNext"); // Avanzar al siguiente testimonio
+      $(".testimonial-carousel").slick("slickNext"); 
     });
   });
 </script>
-
-
 </html>
