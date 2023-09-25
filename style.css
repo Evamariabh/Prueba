@@ -95,6 +95,11 @@ section {
   text-align: center;
 }
 
+#proyectos p{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 3vh;
+color: black;
+}
 .proyectos-container {
   display: flex;
   justify-content: space-between;
@@ -269,6 +274,29 @@ p {
 }
 #testimonios {
   margin-top: 0; /* Agrega esta línea */
+}
+
+/*
+.proyecto {
+  height: 300vh;
+  background-image: url('img/dif.png'); /* Reemplaza 'ruta-de-tu-imagen.jpg' <img src="img/dif.png" alt="Proyecto 1" height="105" width="70">con la ruta de tu imagen de fondo 
+  background-size: cover;  Ajusta el tamaño según tus preferencias (cover, contain, auto, etc.) 
+  background-repeat: no-repeat;  Evita la repetición de la imagen de fondo 
+   
+  height:10vh;
+  width: 6vh;
+}*/
+
+.proyecto a {
+  text-decoration: none; /* Elimina la línea subrayada */
+  color: inherit; /* Hereda el color del texto del elemento padre */
+  cursor: pointer; /* Cambia el cursor al puntero cuando se pasa por encima */
+}
+.proyecto  {
+  background-image: url('img/descarga.png'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 
