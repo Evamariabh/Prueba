@@ -1,0 +1,198 @@
+.rounded-image {
+
+  /* Estilo para la imagen redonda */
+  .image-container {
+    text-align: center;
+  }
+}
+
+.rounded-image {
+  border-radius: 50%;
+  /* Esto hace que la imagen sea redonda */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  /* Centrar horizontalmente */
+  align-items: center;
+  /* Centrar verticalmente */
+  max-width: 100%;
+  height: auto;
+  /* height: 250vh; /* Ajusta la altura según sea necesario */
+}
+
+.container {
+  /* espaciado  115*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 195vh;
+}
+
+p {
+  font-family: Rockwell;
+  /* Cambia la fuente a Arial o una fuente sans-serif de tu elección */
+  font-size: 215%;
+  color: rgb(6, 113, 159);
+  font-weight: bold;
+
+}
+
+.p1 {
+  font-family: Segoe UI;
+  /* Cambia la fuente a Arial o una fuente sans-serif de tu elección */
+  font-size: 185%;
+  color: rgb(6, 113, 159);
+  font-weight: bold;
+  text-align: center;
+  height: 17vh;
+}
+
+h5 {
+  text-align: justify;
+}
+
+.con-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300vh;
+
+}
+
+.con {
+  background-color: rgb(120, 166, 234);
+  /* Fondo azul */
+  color: rgb(255, 252, 252);
+  /* Texto blanco */
+  padding: 30px;
+  width: 50%;
+  margin-top: 20px;
+
+
+}
+
+.image {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo para las secciones */
+section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section-background {
+  background-color: #f0f0f0;
+}
+
+.section-image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+/*proyectos*/
+
+/* Estilos previos omitidos */
+
+
+#proyectos h2 {
+  text-align: center;
+}
+
+.proyectos-container {
+  display: flex;
+  justify-content: space-between;
+  /* Espacio horizontal uniforme entre las columnas */
+  flex-wrap: wrap;
+  /* Envuelve los proyectos en varias filas si es necesario */
+  gap: 20px;
+  /* Espacio entre los proyectos */
+  text-align: center;
+
+
+}
+
+.proyecto {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  flex: 0 0 calc(33.33% - 20px);
+  /* Ancho de cada columna (33.33% con espacio entre columnas) */
+  box-sizing: border-box;
+  transition: background-color 0.2s ease-in-out;
+  /* Transición para el efecto hover */
+}
+
+.proyecto:hover {
+  background-color: #d0d0d0;
+  /* Cambio de color de fondo al pasar el cursor */
+}
+
+.proyecto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.containerp {
+  height: 300vh;
+}
+
+
+
+/*Testimonios*/
+
+.testimonial-carousel {
+  display: flex;
+  overflow: hidden;
+  max-width: 400px;
+  /* Ancho del carrusel */
+  margin: 0 auto;
+}
+
+.testimonial {
+  flex: 0 0 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+  display: none;
+}
+
+.testimonial img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+p {
+  font-style: italic;
+}
+
+h4 {
+  margin-top: 10px;
+}
+
+/* Botones para navegar por el carrusel */
+#prevBtn,
+#nextBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#prevBtn {
+  margin-right: 10px;
+}
